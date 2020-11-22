@@ -1,7 +1,20 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
-  plugins: [new HtmlWebpackPlugin({})],
+  module: {
+    rules: [
+      {
+        test: /\.ts(x?)$/,
+        loader: 'ts-loader',
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: `${__dirname}/template/index.html`,
+      filename: 'index.html',
+      inject: 'body',
+    }),
+  ],
 };

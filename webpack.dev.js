@@ -1,6 +1,7 @@
 const path = require('path');
 const common = require('./webpack.common.js');
 const { merge } = require('webpack-merge');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'development',
@@ -14,4 +15,11 @@ module.exports = merge(common, {
     contentBase: './example',
     compress: true,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: `${__dirname}/template/index.html`,
+      filename: 'index.html',
+      inject: 'body',
+    }),
+  ],
 });
