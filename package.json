@@ -1,0 +1,9 @@
+{
+  "name": "@togami2864/react-ts-github-calender",
+  "version": "1.0.0",
+  "description": "github-calendar wrapper component for react",
+  "main": "index.js",
+  "author": "togami2864",
+  "license": "MIT",
+  "private": false
+}
