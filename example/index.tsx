@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import ReactGithubCalendar from './react-ts-github-calendar';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <ReactGithubCalendar userName="togami2864" />,
+  document.getElementById('root'),
+);

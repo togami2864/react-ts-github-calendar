@@ -1,11 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import GithubCalendar from 'github-calendar';
 
-const ReactGithubCalendar = (): JSX.Element => {
+const ReactGithubCalendar = ({
+  userName,
+}: {
+  userName: string;
+}): JSX.Element => {
   const ref = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
-    GithubCalendar(ref.current, 'togami2864');
-  }, []);
+    GithubCalendar(ref.current, userName);
+  }, [userName]);
   return <div ref={ref}></div>;
 };
 
