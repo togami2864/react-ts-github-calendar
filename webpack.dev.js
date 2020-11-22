@@ -12,7 +12,7 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, 'example'),
   },
   devServer: {
-    contentBase: './example',
+    contentBase: path.resolve(__dirname, 'example'),
     compress: true,
   },
   plugins: [

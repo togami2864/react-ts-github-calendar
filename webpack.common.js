@@ -17,4 +17,7 @@ module.exports = {
       inject: 'body',
     }),
   ],
+  resolve: {
+    extensions: ['.js', '.jsx', '.tsx', '.css'],
+  },
 };

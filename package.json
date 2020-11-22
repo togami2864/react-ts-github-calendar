@@ -6,7 +6,7 @@
   "author": "togami2864",
   "license": "MIT",
   "private": false,
-  "scripts":{
+  "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
@@ -29,5 +29,8 @@
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0",
     "webpack-merge": "^5.4.0"
+  },
+  "dependencies": {
+    "github-calendar": "^2.2.6"
   }
 }

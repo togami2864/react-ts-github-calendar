@@ -4,9 +4,9 @@ const { merge } = require('webpack-merge');
 
 module.exports = merge(common, {
   mode: 'production',
-  entry: path.resolve(__dirname, 'src/react-ts-github-calender.tsx'),
+  entry: path.resolve(__dirname, 'src/react-ts-github-calendar.tsx'),
   output: {
-    filename: 'react-ts-github-calender.bundle.js',
+    filename: 'react-ts-github-calendar.bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
 });
