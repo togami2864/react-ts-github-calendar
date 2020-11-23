@@ -13,5 +13,5 @@ type options = {
   summary_text?: string;
   proxy?: boolean;
   global_stats?: boolean;
-  cache?: numbers;
+  cache?: number;
 };
