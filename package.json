@@ -8,10 +8,8 @@
     "build": "webpack --config webpack.config.js"
   },
   "main": "index.js",
+  "module": "index.js",
   "types": "dist/react-ts-github-calendar.d.ts",
-  "files": [
-    "dist"
-  ],
   "devDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
