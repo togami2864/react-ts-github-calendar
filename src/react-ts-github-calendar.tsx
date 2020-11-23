@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import GithubCalendar from 'github-calendar';
 import './style.css';
-import ReactDOM from 'react-dom';
 
 export type options = {
   responsive?: boolean;
@@ -17,7 +16,7 @@ export type props = {
   option?: options;
 };
 
-export const ReactGithubCalendar: React.FC<props> = ({
+const ReactGithubCalendar: React.FC<props> = ({
   userName,
   option,
 }): React.ReactElement => {
@@ -28,9 +27,4 @@ export const ReactGithubCalendar: React.FC<props> = ({
   return <div ref={ref}>now loading</div>;
 };
 
-// export default ReactGithubCalendar;
-
-ReactDOM.render(
-  <ReactGithubCalendar userName="togami2864" />,
-  document.getElementById('root'),
-);
+export default ReactGithubCalendar;
