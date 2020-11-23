@@ -16,10 +16,7 @@ export type props = {
   option?: options;
 };
 
-const ReactGithubCalendar: React.FC<props> = ({
-  userName,
-  option,
-}): React.ReactElement => {
+const ReactGithubCalendar: React.FC<props> = ({ userName, option }) => {
   const ref = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     GithubCalendar(ref.current, userName, { ...option });
