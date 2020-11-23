@@ -5,10 +5,8 @@
   "main": "index.js",
   "author": "togami2864",
   "license": "MIT",
-  "private": false,
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.config.js"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
