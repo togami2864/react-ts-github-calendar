@@ -20,6 +20,7 @@ module.exports = {
     ],
   },
   resolve: {
+    modules: ['node_modules', path.join(__dirname, 'src')],
     extensions: ['.js', '.jsx', '.tsx', '.css'],
   },
 };
