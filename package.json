@@ -8,7 +8,7 @@
     "build": "webpack --config webpack.config.js"
   },
   "main": "dist/react-ts-github-calendar.js",
-  "types": "dist/src/react-ts-github-calendar.d.ts",
+  "types": "dist/react-ts-github-calendar.d.ts",
   "files": [
     "dist"
   ],
