@@ -6,4 +6,3 @@ src
 index.html
 tsconfig.json
 webpack.config.js
-dist
