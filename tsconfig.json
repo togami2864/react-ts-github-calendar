@@ -9,9 +9,9 @@
     "sourceMap": true,
     "isolatedModules": true,
     "strict": true,
-    "outDir": "./dist",
     "declaration": true,
-    // "noImplicitAny": true,
+    "declarationDir": "./dist",
+    "noImplicitAny": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -23,5 +23,5 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src", "example"]
+  "include": ["src"]
 }

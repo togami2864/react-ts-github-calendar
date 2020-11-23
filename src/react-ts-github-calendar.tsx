@@ -5,7 +5,7 @@ export type options = {
   responsive?: boolean;
   tooltips?: boolean;
   summary_text?: string;
-  proxy?: boolean;
+  proxy?: (userName: string) => Promise<JSX.Element>;
   global_stats?: boolean;
   cache?: number;
 };

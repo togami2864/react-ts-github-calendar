@@ -2,16 +2,14 @@ declare module 'github-calendar' {
   function GithubCalender(
     element: HTMLDivElement | null,
     name: string,
-    option?: options,
+    option?: {
+      responsive?: boolean;
+      tooltips?: boolean;
+      summary_text?: string;
+      proxy?: (userName: string) => Promise<JSX.Element>;
+      global_stats?: boolean;
+      cache?: number;
+    },
   ): React.ReactNode;
   export default GithubCalender;
 }
-
-type options = {
-  responsive?: boolean;
-  tooltips?: boolean;
-  summary_text?: string;
-  proxy?: boolean;
-  global_stats?: boolean;
-  cache?: number;
-};
