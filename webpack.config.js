@@ -4,7 +4,7 @@ module.exports = {
   mode: 'production',
   entry: path.resolve(__dirname, 'src/react-ts-github-calendar.tsx'),
   output: {
-    filename: 'index.js',
+    filename: 'react-ts-github-calendar.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {

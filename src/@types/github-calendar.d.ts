@@ -10,6 +10,6 @@ declare module 'github-calendar' {
       global_stats?: boolean;
       cache?: number;
     },
-  ): React.ReactNode;
+  ): React.ReactElement;
   export default GithubCalender;
 }

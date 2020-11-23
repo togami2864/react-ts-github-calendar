@@ -1,13 +1,17 @@
 {
-  "name": "@togami2864/react-ts-github-calender",
+  "name": "@togami2864/react-ts-github-calendar",
   "version": "1.0.0",
-  "description": "github-calendar wrapper component for react",
-  "main": "index.js",
+  "description": "github-calendar wrapper component for react + typescript",
   "author": "togami2864",
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
+  "main": "dist/react-ts-github-calendar.js",
+  "types": "dist/src/react-ts-github-calendar.d.ts",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
