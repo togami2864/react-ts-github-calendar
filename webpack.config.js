@@ -6,6 +6,8 @@ module.exports = {
   output: {
     filename: 'react-ts-github-calendar.js',
     path: path.resolve(__dirname, 'dist'),
+    libraryTarget: 'umd',
+    libraryExport: 'default',
   },
   module: {
     rules: [
