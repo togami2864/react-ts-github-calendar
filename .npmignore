@@ -5,4 +5,5 @@ src
 .prettierrc.json
 index.html
 tsconfig.json
-webpack.config.json
+webpack.config.js
+dist
