@@ -1,6 +1,6 @@
 {
   "name": "@togami2864/react-ts-github-calendar",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "github-calendar wrapper component for react + typescript",
   "author": "togami2864",
   "license": "MIT",
