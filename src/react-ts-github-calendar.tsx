@@ -2,17 +2,17 @@ import React, { useRef, useEffect } from 'react';
 import GithubCalendar from 'github-calendar';
 import './style.css';
 
-export type props = {
+export type option = {
   userName: string;
   responsive?: boolean;
   tooltips?: boolean;
   summary_text?: string;
-  proxy?: (userName: string) => Promise<JSX.Element>;
+  proxy?: (userName: string) => Promise<HTMLElement>;
   global_stats?: boolean;
   cache?: number;
 };
 
-const ReactGithubCalendar: React.FC<props> = (props) => {
+const ReactGithubCalendar: React.FC<option> = (props) => {
   const {
     userName,
     responsive = false,
@@ -25,14 +25,22 @@ const ReactGithubCalendar: React.FC<props> = (props) => {
   const ref = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     GithubCalendar(ref.current, userName, {
-      responsive,
-      tooltips,
-      summary_text,
-      proxy,
-      global_stats,
       cache,
+      global_stats,
+      proxy,
+      responsive,
+      summary_text,
+      tooltips,
     });
-  }, []);
+  }, [
+    cache,
+    global_stats,
+    proxy,
+    responsive,
+    summary_text,
+    tooltips,
+    userName,
+  ]);
   return <div ref={ref}>now loading</div>;
 };
 

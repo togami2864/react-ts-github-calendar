@@ -6,10 +6,10 @@ declare module 'github-calendar' {
       responsive?: boolean;
       tooltips?: boolean;
       summary_text?: string;
-      proxy?: (userName: string) => Promise<JSX.Element>;
+      proxy?: (userName: string) => Promise<HTMLElement>;
       global_stats?: boolean;
       cache?: number;
     },
-  ): React.ReactElement;
+  ): Promise<void>;
   export default GithubCalender;
 }
