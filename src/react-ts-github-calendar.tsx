@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import GithubCalendar from 'github-calendar';
 import './style.css';
 
-export type option = {
+type option = {
   userName: string;
   responsive?: boolean;
   tooltips?: boolean;
