@@ -41,7 +41,11 @@ const ReactGithubCalendar: React.FC<option> = (props) => {
     tooltips,
     userName,
   ]);
-  return <div ref={ref}>now loading</div>;
+  return (
+    <div ref={ref} id="github-container">
+      now loading
+    </div>
+  );
 };
 
 export default ReactGithubCalendar;
