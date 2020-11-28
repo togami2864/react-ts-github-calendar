@@ -3,7 +3,7 @@ module.exports = {
   roots: ['<rootDir>'],
   preset: 'ts-jest',
   testRegex: '(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$',
-  setupFilesAfterEnv: ['<rootDir>/src/setupEnzyme.ts'],
+  setupFilesAfterEnv: ['<rootDir>/setupEnzyme.ts'],
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   transformIgnorePatterns: ['/node_modules/(?!(xxxx.*?\\.ts$))'],
