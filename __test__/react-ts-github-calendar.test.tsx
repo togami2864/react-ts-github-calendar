@@ -32,3 +32,5 @@ describe('Before async function is loaded', () => {
 // });
 
 // TypeError: Cannot read property 'createElement' of null
+// In github-calendar, window.document isn't defined.
+// For some reason, jsDOM has not been applied
