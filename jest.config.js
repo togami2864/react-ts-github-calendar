@@ -1,11 +1,15 @@
 module.exports = {
-  testEnvironment: 'jsdom',
+  testEnvironment: 'jest-environment-jsdom-global',
   roots: ['<rootDir>'],
   preset: 'ts-jest',
   testRegex: '(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$',
+  transform: {
+    '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
+    '.*\\.(ts)$': '<rootDir>/node_modules/ts-jest',
+  },
   setupFilesAfterEnv: [
-    '<rootDir>/__test__/localStorage/local.js',
-    '<rootDir>/__test__/mocks/browser.js',
+    '<rootDir>/__mocks__/jest-setup.js',
+    '<rootDir>/setupEnzyme.ts',
   ],
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
