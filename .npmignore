@@ -3,6 +3,11 @@ src
 .eslintrc.json
 .gitignore
 .prettierrc.json
+.babelrc
 index.html
 tsconfig.json
 webpack.config.js
+jest.config.js
+setupEnzyme.ts
+__test__
+__mocks__
