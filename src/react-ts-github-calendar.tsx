@@ -12,7 +12,7 @@ type option = {
   cache?: number;
 };
 
-const ReactGithubCalendar: React.FC<option> = (props) => {
+const ReactGitHubCalendar: React.FC<option> = (props) => {
   const {
     userName,
     responsive = false,
@@ -48,4 +48,4 @@ const ReactGithubCalendar: React.FC<option> = (props) => {
   );
 };
 
-export default ReactGithubCalendar;
+export default ReactGitHubCalendar;
