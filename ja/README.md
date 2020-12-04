@@ -43,14 +43,15 @@ export const App: React.FC = () => {
 
 ## Options
 
-| Name         | Type     | Description                                                                                                                                                 | Default 値                                                              |
-| ------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| responsive   | Boolean  | If true, the graph is changed to scale with the container. Custom CSS should be applied to the element to scale it appropriately.                           | false                                                                   |
-| tooltips     | Boolean  | If true, tooltips will be shown when hovered over calendar days.                                                                                            | false                                                                   |
-| global_stats | Boolean  | If false, the global stats (total, longest and current streaks) will not be calculated and displayed.                                                       | true                                                                    |
-| summary_text | String   | The text that appears under the calendar                                                                                                                    | "Summary of pull requests, issues opened, and commits made by USERNAME" |
-| cache        | Number   | The cache time in seconds.                                                                                                                                  | (24 \* 60 \* 60) \*1000                                                 |
-| proxy        | Function | A function that receives as argument the userName and should return a promise resolving the HTML content of the contributions page. We need proxy for CORS. | The default is using [@Bloggify's ](https://github.com/Bloggify)APIs.   |
+| Name         | Type     | Description                                                                                                               | Default 値                                                                        |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| responsive   | Boolean  | true の場合、要素にはカスタム CSS が適用され、レスポンシブ対応されます。                                                  | false                                                                             |
+| tooltips     | Boolean  | true の場合、カレンダーの日付にカーソルを合わせた際に、ツールチップスが表示されます。                                     | false                                                                             |
+| global_stats | Boolean  | false の場合、グローバル統計（合計 contribution 数、最長のストリーク、現在のストリーク）は計算されず、表示されません。    |
+| true         |
+| summary_text | String   | カレンダーの下に表示されるテキスト                                                                                        | "Summary of pull requests, issues opened, and commits made by USERNAME"           |
+| cache        | Number   | 秒単位のキャッシュ時間                                                                                                    | (24 \* 60 \* 60) \*1000                                                           |
+| proxy        | Function | 引数として userName を受け取り、投稿ページの HTML コンテンツを解決するプロミスを返す関数です。CORS 対策のため、必要です。 | デフォルトでは [@Bloggify's ](https://github.com/Bloggify)の API を使っています。 |
 
 ### Example
 
@@ -63,5 +64,5 @@ export const App: React.FC = () => {
 
 # :rotating_light:Cation
 
-Sometimes, Streak & Contribution do not working well. (display 0)
-It takes a few days to be reflected changes.
+ストリーク数と Contribution 数がうまく表示されないときがあります。(すべて 0 と表示される)
+数日置く(変更が反映されるのに時間がかかる時があるため)、もしくはキャッシュを削除して再読み込みするとなおる可能性があります。
