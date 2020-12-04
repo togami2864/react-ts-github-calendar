@@ -34,7 +34,6 @@ export const App: React.FC = () => {
 ```
 
 ・ You have to pass **userName** to component.
-・ Git **H** ub. Take care.
 
 ## Required
 
