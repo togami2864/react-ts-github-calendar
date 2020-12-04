@@ -11,3 +11,5 @@ jest.config.js
 setupEnzyme.ts
 __test__
 __mocks__
+ja
+*.tgz

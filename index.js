@@ -1,2 +1,1 @@
-import ReactGithubCalendar from './dist/react-ts-github-calendar';
-export default ReactGithubCalendar;
+module.exports = require('./dist/react-ts-github-calendar');
