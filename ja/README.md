@@ -61,7 +61,7 @@ export const App: React.FC = () => {
 <ReactGitHubCalendar global_stats={false} cache={(12 * 60 * 60)*1000}/>
 ```
 
-# :rotating_light:Cation
+# :rotating_light:注意
 
-ストリーク数と Contribution 数がうまく表示されない(すべて 0 と表示される)ときがあります。
+ストリーク数と Contribution 数がうまく表示されない(すべて 0 と表示される)ときがあります。  
 数日置く(変更が反映されるのに時間がかかる時があるため)、もしくはキャッシュを削除して再読み込みするとなおる可能性があります。
