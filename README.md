@@ -65,5 +65,5 @@ export const App: React.FC = () => {
 
 # :rotating_light:Cation
 
-Sometimes, Streak & Contribution do not working well. (display 0)
+Sometimes, Streak & Contribution do not working well. (display 0)  
 It takes a few days to be reflected changes.
