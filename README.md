@@ -2,7 +2,7 @@
 
 [github-calendar](https://github.com/IonicaBizau/github-calendar) wrapper component for react + typescript
 
-:japan:[here](https://github.com/togami2864/react-ts-github-calendar/tree/main/ja)
+🇯🇵[here](https://github.com/togami2864/react-ts-github-calendar/tree/main/ja)
 
 # :cloud:Installation
 
