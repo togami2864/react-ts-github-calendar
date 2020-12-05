@@ -7,13 +7,13 @@
 他のライブラリと同じように**yarn**でインストールできます。
 
 ```sh
-yarn add -D @togami2864/react-ts-github-calendar
+yarn add -D react-ts-github-calendar
 ```
 
 または **npm**
 
 ```sh
-npm install --save @togami2864/react-ts-github-calendar
+npm install --save react-ts-github-calendar
 ```
 
 # :books:使用方法
@@ -25,7 +25,7 @@ npm install --save @togami2864/react-ts-github-calendar
 ```js
 // App.tsx
 import React from 'react';
-import ReactGitHubCalendar from '@togami2864/react-ts-github-calendar';
+import ReactGitHubCalendar from 'react-ts-github-calendar';
 
 // 任意の名前
 export const App: React.FC = () => {

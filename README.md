@@ -10,13 +10,13 @@ You can use this component with Next.js too.
 You can install it like every other library with **yarn**
 
 ```sh
-yarn add -D @togami2864/react-ts-github-calendar
+yarn add -D react-ts-github-calendar
 ```
 
 or with **npm**
 
 ```sh
-npm install --save @togami2864/react-ts-github-calendar
+npm install --save react-ts-github-calendar
 ```
 
 # :books:Usage
@@ -28,7 +28,7 @@ The component work without any additional setup.
 ```js
 // App.tsx
 import React from 'react';
-import ReactGitHubCalendar from '@togami2864/react-ts-github-calendar';
+import ReactGitHubCalendar from 'react-ts-github-calendar';
 
 // your own component name
 export const App: React.FC = () => {
