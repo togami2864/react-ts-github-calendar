@@ -1,8 +1,9 @@
 # react-ts-github-calendar
 
-[github-calendar](https://github.com/IonicaBizau/github-calendar) wrapper component for react + typescript
+[github-calendar](https://github.com/IonicaBizau/github-calendar) wrapper component for react + typescript<br/>
+You can use this component with Next.js too.
 
-🇯🇵[here](https://github.com/togami2864/react-ts-github-calendar/tree/main/ja)
+🇯🇵[ja](https://github.com/togami2864/react-ts-github-calendar/tree/main/ja)
 
 # :cloud:Installation
 
@@ -61,6 +62,26 @@ export const App: React.FC = () => {
 // tooltips = true, responsive = true
 
 <ReactGitHubCalendar global_stats={false} cache={(12 * 60 * 60)*1000}/>
+```
+
+## With Next.js
+
+If you want to use this component with Next.js, you have to use dynamic import to avoid SSR.
+
+```js
+const ReactGitHubCalendar = dynamic(() => import('react-ts-github-calendar'), {
+  ssr: false,
+});
+```
+
+Otherwise, you'll see the error
+
+```
+window is not defined
+
+or
+
+document is not defined
 ```
 
 # :rotating_light:Cation

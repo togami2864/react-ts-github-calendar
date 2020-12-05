@@ -61,6 +61,26 @@ export const App: React.FC = () => {
 <ReactGitHubCalendar global_stats={false} cache={(12 * 60 * 60)*1000}/>
 ```
 
+## With Next.js
+
+このコンポーネントを Next.js で使うときは, SSR を回避するために dynamic import を使用する必要があります。
+
+```js
+const ReactGitHubCalendar = dynamic(() => import('react-ts-github-calendar'), {
+  ssr: false,
+});
+```
+
+これをしないと、以下のようなエラーが発生します。
+
+```
+window is not defined
+
+or
+
+document is not defined
+```
+
 # :rotating_light:注意
 
 ストリーク数と Contribution 数がうまく表示されない(すべて 0 と表示される)ときがあります。<br/>

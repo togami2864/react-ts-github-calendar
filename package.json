@@ -12,8 +12,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/togami2864/react-ts-github-calendar"
   },
-  "main": "index.js",
+  "main": "dist/react-ts-github-calendar.js",
   "types": "dist/react-ts-github-calendar.d.ts",
+  "files": ["dist","README.md","package.json","LICENSE.txt"],
   "devDependencies": {
     "@types/enzyme": "^3.10.8",
     "@types/enzyme-adapter-react-16": "^1.0.6",
