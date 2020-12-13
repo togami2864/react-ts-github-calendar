@@ -15,6 +15,7 @@
   "main": "dist/react-ts-github-calendar.js",
   "types": "dist/react-ts-github-calendar.d.ts",
   "files": ["dist","README.md","package.json","LICENSE.txt"],
+  "keywords": ["github-calendar","embed","react","typescript"],
   "devDependencies": {
     "@types/enzyme": "^3.10.8",
     "@types/enzyme-adapter-react-16": "^1.0.6",
