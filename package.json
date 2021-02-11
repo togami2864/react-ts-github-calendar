@@ -1,6 +1,6 @@
 {
   "name": "react-ts-github-calendar",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "github-calendar wrapper component for react + typescript",
   "author": "togami2864",
   "license": "MIT",
@@ -14,8 +14,18 @@
   },
   "main": "dist/react-ts-github-calendar.js",
   "types": "dist/react-ts-github-calendar.d.ts",
-  "files": ["dist","README.md","package.json","LICENSE.txt"],
-  "keywords": ["github-calendar","embed","react","typescript"],
+  "files": [
+    "dist",
+    "README.md",
+    "package.json",
+    "LICENSE.txt"
+  ],
+  "keywords": [
+    "github-calendar",
+    "embed",
+    "react",
+    "typescript"
+  ],
   "devDependencies": {
     "@types/enzyme": "^3.10.8",
     "@types/enzyme-adapter-react-16": "^1.0.6",
@@ -59,6 +69,6 @@
     "react-dom": "^17.0.1"
   },
   "dependencies": {
-    "github-calendar": "^2.2.6"
+    "github-calendar": "2.2.7"
   }
 }
